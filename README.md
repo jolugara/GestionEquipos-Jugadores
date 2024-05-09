@@ -9,7 +9,7 @@ Para utilizar este proyecto, sigue estos pasos:
 1. Clona el repositorio en tu máquina local:
 
    ```bash
-   [git clone https://github.com/tu_usuario/tu_repositorio.git](https://github.com/jolugara/GestionEquipos-Jugadores.git)
+   git clone https://github.com/jolugara/GestionEquipos-Jugadores.git
 -- EQUIPOS
 INSERT INTO equipos (id, nombre, ciudad, deporte, fecha) VALUES (1, 'Sevilla', 'Sevilla', 'futbol', CURDATE());
 INSERT INTO equipos (id, nombre, ciudad, deporte, fecha) VALUES (2, 'Betis', 'Sevilla', 'baloncesto', CURDATE());

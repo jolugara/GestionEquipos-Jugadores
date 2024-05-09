@@ -2,14 +2,60 @@
 require_once '../../controllers/EquipoController.php';
 
 $equipoController = new EquipoController();
-$equipos = $equipoController->create();
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $equipoController->create();
+}
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Crear Equipo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="date"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #4CAF50;
+            color: #4CAF50;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+    </style>
     <script>
         function validateForm() {
             var nombre = document.forms["myForm"]["nombre"].value;
@@ -31,9 +77,9 @@ $equipos = $equipoController->create();
         Deporte: <select name="deporte" required>
             <option value="Fútbol">Fútbol</option>
             <option value="Baloncesto">Baloncesto</option>
-            <option value="Tenis">Tenis</option>
+            <option value="Voleibol">Voleibol</option>
         </select><br>
-        Fecha: <input type="date" name="fecha" required><br>
+        Fecha de creación: <input type="date" name="fecha" required><br>
         <input type="submit" value="Crear Equipo">
     </form>
 </body>

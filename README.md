@@ -12,7 +12,7 @@ Para utilizar este proyecto, sigue estos pasos:
    git clone https://github.com/jolugara/GestionEquipos-Jugadores.git
    ```
 2. Archivo SQL de la base de datos:
-      [Aquí está mi archivo]([ruta/a/tu/archivo](https://github.com/jolugara/GestionEquipos-Jugadores/blob/main/gestion-de-equipos.sql)) 
+      [Aquí está mi archivo]([https://github.com/jolugara/GestionEquipos-Jugadores/blob/main/gestion-de-equipos.sql]()) 
 
 4. Si fuera necesario aqui tienes unos insert de equipos y jugadores para SQL:
 ```bash

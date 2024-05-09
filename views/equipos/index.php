@@ -10,6 +10,7 @@ $equipos = $equipoController->index();
 <head>
     <title>Lista de Equipos</title>
     <a href="create.php">Crear equipo</a>
+    <a href="../jugadores/create.php">Crear jugador</a>
 </head>
 <body>
     <h1>Lista de Equipos</h1>

@@ -19,7 +19,7 @@ class EquipoController {
             $deporte = $_POST["deporte"];
             $fecha = $_POST["fecha"];
     
-            $equipo = new Equipo($nombre, $ciudad, $deporte, $fecha);
+            $equipo = new Equipo(null, $nombre, $ciudad, $deporte, $fecha);
             $equipo->save();
 
             header('Location: ../equipos');
@@ -39,7 +39,7 @@ class EquipoController {
                 exit();
             }
     
-            $equipo = new Equipo($nombre, $ciudad, $deporte, $fecha);
+            $equipo = new Equipo(null, $nombre, $ciudad, $deporte, $fecha);
             $equipo->save();
             header('Location: /path/to/show.php?id=' . $equipo->getId());
             exit();

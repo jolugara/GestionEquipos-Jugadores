@@ -24,6 +24,7 @@ $equipos = $equipoController->create();
     </script>
 </head>
 <body>
+    <a href="../../views/equipos">Volver a la lista de equipos</a>
     <form name="myForm" onsubmit="return validateForm()" method="post">
         Nombre: <input type="text" name="nombre" required><br>
         Ciudad: <input type="text" name="ciudad" required><br>

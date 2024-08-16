@@ -1,6 +1,6 @@
 # Proyecto de Gestión de Equipos y Jugadores
 
-Este proyecto es una aplicación de gestión de equipos y jugadores desarrollada en [nombre_del_lenguaje]. Permite gestionar equipos deportivos y sus respectivos jugadores.
+Este proyecto es una aplicación de gestión de equipos y jugadores desarrollada en PHP. Permite gestionar equipos deportivos y sus respectivos jugadores.
 
 ## Configuración
 
